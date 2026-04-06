@@ -18,16 +18,17 @@
     />
     <link rel="stylesheet" href="./css/styles.css"/>
     <title>goit-markup-hw-05</title>
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
 
 <header class="header">
-    <div class="container flex header-container">
-        <nav class="flex header-nav">
+    <div class="container header-container">
+        <nav class="header-nav">
             <a class="logo-text" href="./index.html"
             ><span class="logo-color">web</span>studio</a
             >
-            <ul class="nav-items flex">
+            <ul class="nav-items">
                 <li class="nav-item">
                     <a href="#" class="nav-item-link active">Studio</a>
                 </li>
@@ -40,7 +41,7 @@
             </ul>
         </nav>
         <address class="header-address">
-            <ul class="header-address-items flex">
+            <ul class="header-address-items">
                 <li class="header-address-item">
                     <a href="mailto:info@devstudio.com" class="header-address-link"
                     >info@devstudio.com</a
@@ -53,6 +54,11 @@
                 </li>
             </ul>
         </address>
+        <button class="header-mobile-menu">
+            <svg width="17" height="15">
+                <use href="./images/icons.svg#mobile-menu-op-btn"></use>
+            </svg>
+        </button>
     </div>
 </header>
 <main>
@@ -65,9 +71,9 @@
     <section class="our-features section">
         <div class="container">
             <h2 class="visually-hidden">Our Features</h2>
-            <ul class="our-features-list flex">
+            <ul class="our-features-list">
                 <li>
-                    <div class="our-features-icon flex">
+                    <div class="our-features-icon">
                         <svg width="64" height="64">
                             <use href="./images/icons.svg#iconantenna1"/>
                         </svg>
@@ -79,7 +85,7 @@
                     </p>
                 </li>
                 <li>
-                    <div class="our-features-icon flex">
+                    <div class="our-features-icon">
                         <svg width="64" height="64">
                             <use href="./images/icons.svg#iconclock1"/>
                         </svg>
@@ -91,7 +97,7 @@
                     </p>
                 </li>
                 <li>
-                    <div class="our-features-icon flex">
+                    <div class="our-features-icon">
                         <svg width="64" height="64">
                             <use href="./images/icons.svg#icondiagram1"/>
                         </svg>
@@ -103,7 +109,7 @@
                     </p>
                 </li>
                 <li>
-                    <div class="our-features-icon flex">
+                    <div class="our-features-icon">
                         <svg width="64" height="64">
                             <use href="./images/icons.svg#iconastronaut1"/>
                         </svg>
@@ -120,7 +126,7 @@
     <section class="our-team section">
         <div class="container">
             <h2 class="our-team-title">Our Team</h2>
-            <ul class="our-team-items flex">
+            <ul class="our-team-items">
                 <li class="our-team-item">
                     <img
                             src="./images/team/1.png"
@@ -131,9 +137,9 @@
                     <div class="our-team-item-description">
                         <h3 class="our-team-item-title">Mark Guerrero</h3>
                         <p class="our-team-item-text">Product Designer</p>
-                        <ul class="our-team-social-icons flex">
-                            <li class="our-team-social-icon ">
-                                <a href="#" class="our-team-social-link flex">
+                        <ul class="our-team-social-icons">
+                            <li class="our-team-social-icon">
+                                <a href="#" class="our-team-social-link">
                                     <svg width="16" height="16" class="our-team-social-link-img">
                                         <use href="./images/icons.svg#iconinstagram2"/>
                                     </svg>
@@ -173,9 +179,9 @@
                     <div class="our-team-item-description">
                         <h3 class="our-team-item-title">Tom Ford</h3>
                         <p class="our-team-item-text">Frontend Developer</p>
-                        <ul class="our-team-social-icons flex">
-                            <li class="our-team-social-icon ">
-                                <a href="#" class="our-team-social-link flex">
+                        <ul class="our-team-social-icons">
+                            <li class="our-team-social-icon">
+                                <a href="#" class="our-team-social-link">
                                     <svg width="16" height="16" class="our-team-social-link-img">
                                         <use href="./images/icons.svg#iconinstagram2"/>
                                     </svg>
@@ -215,9 +221,9 @@
                     <div class="our-team-item-description">
                         <h3 class="our-team-item-title">Camila Garcia</h3>
                         <p class="our-team-item-text">Marketing</p>
-                        <ul class="our-team-social-icons flex">
-                            <li class="our-team-social-icon ">
-                                <a href="#" class="our-team-social-link flex">
+                        <ul class="our-team-social-icons">
+                            <li class="our-team-social-icon">
+                                <a href="#" class="our-team-social-link">
                                     <svg width="16" height="16" class="our-team-social-link-img">
                                         <use href="./images/icons.svg#iconinstagram2"/>
                                     </svg>
@@ -257,9 +263,9 @@
                     <div class="our-team-item-description">
                         <h3 class="our-team-item-title">Daniel Wilson</h3>
                         <p class="our-team-item-text">UI Designer</p>
-                        <ul class="our-team-social-icons flex">
-                            <li class="our-team-social-icon ">
-                                <a href="#" class="our-team-social-link flex">
+                        <ul class="our-team-social-icons">
+                            <li class="our-team-social-icon">
+                                <a href="#" class="our-team-social-link">
                                     <svg width="16" height="16" class="our-team-social-link-img">
                                         <use href="./images/icons.svg#iconinstagram2"/>
                                     </svg>
@@ -295,7 +301,7 @@
     <section class="portfolio section">
         <div class="container">
             <h2 class="portfolio-title">Our Portfolio</h2>
-            <ul class="portfolio-items flex">
+            <ul class="portfolio-items">
                 <li class="portfolio-item">
                     <div class="portfolio-img-container">
                         <img
@@ -403,7 +409,7 @@
     </section>
 </main>
 <footer class="footer">
-    <div class="container flex footer-menu">
+    <div class="container footer-menu">
         <div class="column">
             <a class="footer-logo" href="./index.html"
             ><span class="logo-color">web</span>studio</a
@@ -415,9 +421,9 @@
         </div>
         <div class="column">
             <p class="social-media-title">Social media</p>
-            <ul class="our-team-social-icons flex">
+            <ul class="our-team-social-icons">
                 <li class="our-team-social-icon ">
-                    <a href="#" class="our-team-social-link flex">
+                    <a href="#" class="our-team-social-link">
                         <svg class="our-team-social-link-img" width="24" height="24">
                             <use href="./images/icons.svg#iconinstagram2"/>
                         </svg>
@@ -449,10 +455,10 @@
         <div class="column subscribe-column">
             <p class="footer-text-subscribe">Subscribe</p>
             <form>
-                <div class="footer-email-wrapper flex">
+                <div class="footer-email-wrapper">
                     <input type="email" name="footerEmail" id="footer-email" placeholder="E-mail"
                            class="footer-email-input">
-                    <button type="submit" class="footer-submit-btn flex">
+                    <button type="submit" class="footer-submit-btn">
                         Subscribe
                         <svg width="24" height="24" class="footer-email-svg">
                             <use href="./images/icons.svg#footer-send"></use>
@@ -465,7 +471,7 @@
 </footer>
 
 <div class="modal-overlay">
-    <div class="modal-window flex">
+    <div class="modal-window">
 
         <button type="button" class="modal-close-button">
             <svg class="modal-close-svg" width="8" height="8">
@@ -504,10 +510,10 @@
             <label for="comment" class="textarea-label">Comment</label>
             <textarea name="textarea" id="comment" class="textarea" rows="5" placeholder="Text input"></textarea>
 
-            <div class="checkbox-wrapper flex">
+            <div class="checkbox-wrapper">
                 <input type="checkbox" name="checkbox" id="checkbox" class="checkbox visually-hidden" >
-                <label for="checkbox" class="checkbox-label flex">
-                    <span class="check-icon flex">
+                <label for="checkbox" class="checkbox-label">
+                    <span class="check-icon">
                         <svg width="10" height="8" class="check-svg">
                             <use href="./images/icons.svg#flag"></use>
                         </svg>
@@ -521,6 +527,67 @@
                 Send
             </button>
         </form>
+    </div>
+</div>
+
+<div class="mobile-menu">
+    <div class="mobile-menu-wrapper">
+        <button class="close-button">
+            <svg width="16" height="16" class="close-svg svg">
+                <use href="./images/icons.svg#modal-x4"></use>
+            </svg>
+        </button>
+        <nav>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link">Studio</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <address>
+            <ul>
+                <li><a type="tel" href="+11(000)1111111">+11 (000) 111-11-11</a></li>
+                <li><a type="email" href="info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        </address>
+        <ul class="our-team-social-icons flex">
+            <li class="our-team-social-icon ">
+                <a href="#" class="our-team-social-link flex">
+                    <svg class="our-team-social-link-img" width="24" height="24">
+                        <use href="./images/icons.svg#iconinstagram2"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="our-team-social-icon">
+                <a href="#" class="our-team-social-link">
+                    <svg class="our-team-social-link-img" width="24" height="24">
+                        <use href="./images/icons.svg#icontwitter1"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="our-team-social-icon">
+                <a href="#" class="our-team-social-link">
+                    <svg class="our-team-social-link-img" width="24" height="24">
+                        <use href="./images/icons.svg#iconfacebook1"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="our-team-social-icon">
+                <a href="#" class="our-team-social-link">
+                    <svg class="our-team-social-link-img" width="24" height="24">
+                        <use href="./images/icons.svg#iconlinkedin1"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+
     </div>
 </div>
 </body>
