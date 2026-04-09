@@ -54,7 +54,7 @@
                 </li>
             </ul>
         </address>
-        <button class="header-mobile-menu">
+        <button class="header-mobile-menu" data-mobile-menu-open>
             <svg width="17" height="15">
                 <use href="./images/icons.svg#mobile-menu-op-btn"></use>
             </svg>
@@ -132,6 +132,7 @@
                             src="./images/team/1.png"
                             alt="Mark Guerrero // Product Designer"
                             width="264"
+                            class="our-team-img"
 
                     />
                     <div class="our-team-item-description">
@@ -511,7 +512,7 @@
             <textarea name="textarea" id="comment" class="textarea" rows="5" placeholder="Text input"></textarea>
 
             <div class="checkbox-wrapper">
-                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox visually-hidden" >
+                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox visually-hidden">
                 <label for="checkbox" class="checkbox-label">
                     <span class="check-icon">
                         <svg width="10" height="8" class="check-svg">
@@ -530,35 +531,42 @@
     </div>
 </div>
 
-<div class="mobile-menu">
+<div class="mobile-menu" data-mobile-menu>
     <div class="mobile-menu-wrapper">
-        <button class="close-button">
-            <svg width="16" height="16" class="close-svg svg">
+        <button class="close-button" data-mobile-menu-close>
+            <svg width="8" height="8" class="close-svg">
                 <use href="./images/icons.svg#modal-x4"></use>
             </svg>
         </button>
-        <nav>
-            <ul class="mobile-menu-list">
-                <li class="mobile-menu-item">
-                    <a href="#" class="mobile-menu-link">Studio</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a href="#" class="mobile-menu-link">Portfolio</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a href="#" class="mobile-menu-link">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li><a type="tel" href="+11(000)1111111">+11 (000) 111-11-11</a></li>
-                <li><a type="email" href="info@devstudio.com">info@devstudio.com</a></li>
-            </ul>
-        </address>
-        <ul class="our-team-social-icons flex">
-            <li class="our-team-social-icon ">
-                <a href="#" class="our-team-social-link flex">
+        <div class="menu-block">
+            <nav>
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item">
+                        <a href="#" class="mobile-menu-link">Studio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#" class="mobile-menu-link">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#" class="mobile-menu-link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="mobile-menu-address">
+                <ul class="mobile-menu-address-list">
+                    <li class="mobile-menu-address-item">
+                        <a type="tel" href="+11(000)1111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mobile-menu-address-item">
+                        <a type="email"
+                           href="info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <ul class="our-team-social-icons">
+            <li class="our-team-social-icon">
+                <a href="#" class="our-team-social-link">
                     <svg class="our-team-social-link-img" width="24" height="24">
                         <use href="./images/icons.svg#iconinstagram2"/>
                     </svg>
@@ -586,8 +594,6 @@
                 </a>
             </li>
         </ul>
-
-
     </div>
 </div>
 </body>
