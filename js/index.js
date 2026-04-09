@@ -1,9 +1,9 @@
 class Modal {
     constructor() {
         this.refs = {
-            modal: document.querySelector('[data-modal]'),
-            modalClose: document.querySelector('[data-modal-close]'),
-            modalOpen: document.querySelector('[data-modal-open]'),
+            modal: document.querySelector('[data-mobile-menu]'),
+            modalClose: document.querySelector('[data-mobile-menu-close]'),
+            modalOpen: document.querySelector('[data-mobile-menu-open]'),
         }
         this.init()
     }
