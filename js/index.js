@@ -19,4 +19,4 @@ class Modal {
     }
 }
 
-new Modal()
+new Modal();

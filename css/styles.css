@@ -38,6 +38,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    /*height: auto;*/
 }
 
 body {
@@ -104,7 +106,7 @@ input {
 }
 
 .section {
-    padding-block: 96px;
+    padding-block:  96px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -180,7 +182,7 @@ input {
     }
 
     .header-nav {
-        gap: 76px;
+        gap: 120px;
     }
 }
 
@@ -236,13 +238,14 @@ input {
     background-color: var(--pressed-state);
 }
 
-/*.header-address {*/
-/*    font-style: normal;*/
-/*    !*padding-block: 16px;*!*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*}*/
+.header-address {
+    font-style: normal;
+    /*font-weight: 400;*/
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+}
 
 .header-address-item {
     color: var(--text);
@@ -260,20 +263,19 @@ input {
 
 @media screen and (min-width: 1158px) {
     .header-address-link {
-        /*display: inline-block;*/
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
         padding-block: 24px;
-        /*transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
     }
 }
 
-
 .header-address-link:is(:hover, :focus) {
     color: var(--pressed-state);
-
 }
 
-
-/* hero */
+/* -------------------------------hero--------------------------------------------- */
 .hero {
     color: white;
     text-align: center;
@@ -287,7 +289,7 @@ input {
     .hero {
         max-width: 768px;
         margin: 0 auto;
-        padding-block: 188px;
+        padding-block: 112px;
     }
 }
 
@@ -295,7 +297,6 @@ input {
 @media screen and (min-width: 1158px) {
     .hero {
         max-width: 1440px;
-        margin: 0 auto;
         padding-block: 188px;
     }
 }
@@ -306,7 +307,7 @@ input {
     letter-spacing: 0.02em;
     line-height: 1.11;
     max-width: 216px;
-    margin: 0 auto 48px;
+    margin: 0 auto 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -316,7 +317,7 @@ input {
         letter-spacing: 0.02em;
         line-height: 1.07;
         max-width: 496px;
-        margin: 0 auto 48px;
+        margin: 0 auto 36px;
     }
 }
 
@@ -339,7 +340,13 @@ input {
     background-color: var(--pressed-state);
 }
 
-/* our features */
+@media screen and (min-width: 1158px) {
+    .hero-title {
+        margin: 0 auto 48px;
+    }
+}
+
+/*------------------------ our features------------------------------------- */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -446,12 +453,13 @@ input {
 .our-team-items {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 72px;
 }
 
 .our-team-item {
-    /*width: calc((100% - (24px * 3)) / 4);*/
-    /*width: 100%;*/
+    width: 100%;
+    max-width: 264px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: var(--white-background);
     border-radius: 0 0 4px 4px;
@@ -514,6 +522,7 @@ input {
     .our-team-items {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 24px;
         row-gap: 64px;
     }
@@ -558,10 +567,18 @@ input {
     position: relative;
     overflow: hidden;
     width: 100%;
+
+}
+@media screen and (max-width: 1157px) {
+    .portfolio-item {
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    }
 }
 
-.portfolio-item:hover {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+@media screen and (min-width: 1158px) {
+    .portfolio-item:hover {
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    }
 }
 
 .portfolio-item:hover .overlay {
@@ -833,16 +850,31 @@ input {
 }
 
 .modal-window {
-    max-width: 408px;
+    max-width: 288px;
     max-height: 80%;
     overflow-y: auto;
     background-color: var(--modal-background);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 24px 16px;
     box-shadow: 0 1px 1px 0 #00000024, 0 1px 3px 0 #0000001F, 0 2px 1px 0 #00000033;
+}
 
+@media screen and (min-width: 768px) {
+    .modal-window {
+        max-width: 408px;
+        max-height: 80%;
+        padding: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .modal-window {
+        max-width: 408px;
+        max-height: 80%;
+
+    }
 }
 
 .modal-close-button {
