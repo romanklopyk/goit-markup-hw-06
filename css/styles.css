@@ -463,6 +463,11 @@ input {
         font-weight: 500;
 
     }
+
+    .our-features-text {
+        font-weight: 400;
+
+    }
 }
 
 /*------------------------ our team --------------------------------------------*/
@@ -673,6 +678,10 @@ input {
 }
 
 @media screen and (min-width: 1158px) {
+
+    .portfolio-items {
+        gap: 40px 24px;
+    }
 
     .portfolio-item {
         width: calc((100% - (24px * 2)) / 3);
