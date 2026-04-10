@@ -193,6 +193,10 @@ input {
         gap: 40px;
         flex-direction: row;
     }
+
+    .header-nav {
+        gap: 76px;
+    }
 }
 
 .logo-text {
@@ -554,7 +558,9 @@ input {
     }
 
     .our-team-item {
-        width: calc((100% - 24px) / 2);
+        /*width: calc((100% - 24px) / 2);*/
+        width: 264px;
+        /*justify-content: center;*/
     }
 }
 
@@ -652,7 +658,7 @@ input {
 @media screen and (min-width: 768px) {
     .portfolio-items {
         flex-direction: row;
-        gap: 48px 24px;
+        gap: 72px 24px;
         flex-wrap: wrap;
     }
 
@@ -1108,6 +1114,7 @@ input {
 
 .mobile-menu.is-open {
     pointer-events: all;
+    visibility: visible;
     opacity: 1;
 }
 @media screen and (max-width: 767px) {
