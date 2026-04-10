@@ -282,14 +282,28 @@ input {
     max-width: 100%;
     margin: 0 auto;
     padding-block: 72px;
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/people-office-1.png) no-repeat center  / cover, var(--hero-background);
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg/Dark-bg.png') no-repeat center  / cover, var(--hero-background);
 }
+
+@media screen and (min-resolution: 192dpi) {
+    .hero{
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg/Dark-bg-2x.png') no-repeat center  / cover, var(--hero-background);
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .hero {
         max-width: 768px;
         margin: 0 auto;
         padding-block: 112px;
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg/Dark-bg-tablet.png') no-repeat center  / cover, var(--hero-background);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi){
+    .hero{
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg/Dark-bg-tablet-2x.png') no-repeat center  / cover, var(--hero-background);
     }
 }
 
@@ -298,6 +312,13 @@ input {
     .hero {
         max-width: 1440px;
         padding-block: 188px;
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg/people-office.png') no-repeat center  / cover, var(--hero-background);
+    }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi){
+    .hero{
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg/people-office-2x.png') no-repeat center  / cover, var(--hero-background);
     }
 }
 
@@ -573,7 +594,7 @@ input {
     .portfolio-item {
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
-}
+}media7
 
 @media screen and (min-width: 1158px) {
     .portfolio-item:hover {
@@ -1064,7 +1085,16 @@ input {
 
 
 /*-----------MOBILE-MENU-----------*/
+.mobile-menu{
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.mobile-menu.is-open {
+    pointer-events: all;
+    opacity: 1;
+}
 @media screen and (max-width: 767px) {
     .mobile-menu {
         display: block;
@@ -1074,14 +1104,9 @@ input {
         width: 100%;
         height: 100vh;
         z-index: 999;
-        pointer-events: none;
-        opacity: 0;
     }
 
-    .mobile-menu.is-open {
-        pointer-events: all;
-        opacity: 1;
-    }
+
 
     .mobile-menu-wrapper {
         padding: 24px 24px 40px 16px;
