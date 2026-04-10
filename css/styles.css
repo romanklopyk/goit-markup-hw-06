@@ -680,7 +680,7 @@ input {
 @media screen and (min-width: 1158px) {
 
     .portfolio-items {
-        gap: 40px 24px;
+        gap: 48px 24px;
     }
 
     .portfolio-item {
@@ -859,7 +859,8 @@ input {
 
     .footer .column.subscribe-column {
         max-width: none;
-        margin-left: 80px;
+        margin-left: auto;
+        /*margin-left: 80px;*/
     }
 
     .footer-email-wrapper {
