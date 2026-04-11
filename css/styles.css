@@ -1136,7 +1136,7 @@ input {
     justify-content: space-between;
     align-items: flex-start;
     height: 100%;
-    background-color: var(--modal-background);
+    background-color: #fff;
 }
 
 .mobile-menu .close-button {
