@@ -809,7 +809,8 @@ input {
 @media screen and (min-width: 768px) {
 
     .footer-menu {
-
+        margin-inline: auto;
+        max-width: calc(264px * 2 + 24px);
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
@@ -827,6 +828,10 @@ input {
 
     .footer .social-media-title {
         text-align: left;
+    }
+
+    .footer .subscribe-column {
+
     }
 
     .footer-text-subscribe {
@@ -847,12 +852,15 @@ input {
 
     .footer-menu {
         display: flex;
+        max-width: 1158px;
         flex-wrap: nowrap;
         align-items: baseline;
+
     }
 
     .footer .column {
         max-width: 264px;
+        flex-shrink: 0;
     }
 
     .footer .column + .column {
